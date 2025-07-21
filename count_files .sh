@@ -1,6 +1,6 @@
 #!/bin/bash
-read -p "Entrez le nom du dossier: " myfolder 
-    count=$(ls "$myfolder" | wc -l)
+read -p "Entrez le nom du dossier: " dossier
+    count=$(ls "$dossier" | wc -l)
     number=$(echo "$count") 
-    echo "Le dossier $myfolder contient $number fichier(s)."
+    echo "Le dossier $dossier contient $number fichier(s)."
  
