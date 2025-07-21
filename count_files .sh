@@ -1,10 +1,10 @@
-#!/bin/bash # cette ligne montre qu'on utilise bash pour excécuter le script.
+#!/bin/bash
 
-read -p "Entrez le nom du dossier : " dossier
+read -p "Entrez le nom du dossier: " dossier
 
+if [ -d "$dossier" ]; then
     count=$(ls "$dossier" | wc -l)
-
-    number=$(echo "$count") 
-
-    echo "Le dossier $dossier contient $number fichier(s)."
- 
+    echo "Le dossier $dossier contient $count fichier(s)."
+else
+    echo "Erreur : le dossier '$dossier' n'existe pas."
+fi
