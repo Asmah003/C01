@@ -1,7 +1,7 @@
 #!/bin/bash
 
-read  myfolder
+read -a myfolder
 
  number=$(ls "$myfolder" | wc -l)
  
- echo "Le dossier $myfolder contient  $number fichier(s)."
+ echo "Le dossier $myfolder contient $number fichier(s)."
