@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -a myfolder
+read -p myfolder
 
  number=$(ls "$myfolder" | wc -l)
  
