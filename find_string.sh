@@ -1,7 +1,7 @@
 #!/bin/bash
 
-read -p "Entrez le nom du fichier : " fichier
-read -p "Entrez la chaine à chercher : " chaine
+read -p "Entrez le nom du fichier :" fichier
+read -p "Entrez la chaine à chercher :" chaine
 
 if grep "$chaine" "$fichier"; then
     echo "La chaîne '$chaine' a été trouvée dans '$fichier'."
