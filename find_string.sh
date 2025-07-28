@@ -1,15 +1,11 @@
 #!/bin/bash
 
-read fichier
+read f
 
-read chaîne 
+read c 
 
-if grep -q "$chaîne" "$fichier" then
-
-    echo "La chaîne '$chaîne' a été trouvée dans $fichier."
-
+if grep -q "$c" "$f"; then
+    echo "La chaîne '$c' a été trouvée dans $f."
 else 
-
-    echo "La chaîne '$chaîne' n'a pas été trouvée dans $fichier."
-
+    echo "La chaîne '$c' n'a pas été trouvée dans $f."
 fi
