@@ -4,7 +4,7 @@ read fichier
 
 read chaine 
 
-if grep "$chaine" "$fichier"; then
+if grep -q "$chaine" "$fichier"; then
 
     echo "La chaîne '$chaine' a été trouvée dans '$fichier'."
 
